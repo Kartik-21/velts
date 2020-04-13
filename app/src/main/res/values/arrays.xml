@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="bloodgroup">
+        <item>Select Bloodgroup</item>
+        <item>O Positive</item>
+        <item>O Negative</item>
+        <item>A Positive</item>
+        <item>A Negative</item>
+        <item>B Positive</item>
+        <item>B Negative</item>
+        <item>AB Positive</item>
+        <item>AB Negative</item>
+    </string-array>
+
+    <string-array name="VehicalType">
+        <item>Select Vehical Type</item>
+        <item>MOTOR CYCLE WITHOUT GEAR</item>
+        <item>MOTOR CYCLE WITH GEAR</item>
+        <item>LMV -3 WHEELER NT</item>
+        <item>LMV-NT-CAR-(LMV)</item>
+        <item>LMV-TRACTOR-NT</item>
+        <item>MOTOR CYCLE WITH GEAR </item>
+        <item>LMV -3 WHEELER CAB</item>
+        <item>LMV -3 WHEELER TRANSPORT </item>
+    </string-array>
+
+    <string-array name="VehicalClass">
+        <item>Select Vehical Class</item>
+        <item>Ambulance</item>
+        <item>Bus</item>
+        <item>Cash Van</item>
+        <item>Car Texi</item>
+        <item>LMV</item>
+        <item>Motor Cycle</item>
+        <item>Mini Bus</item>
+        <item>Truck </item>
+    </string-array>
+
+    <string-array name="VehicalType1">
+        <item>Select Vehical Type</item>
+        <item>Goods</item>
+        <item>Passenger</item>
+        <item>Private</item>
+        <item>Special</item>
+    </string-array>
+
+
+</resources>
