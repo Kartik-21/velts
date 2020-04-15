@@ -13,9 +13,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:text="Name       "
+        android:text="Name:       "
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="@color/Blue" />
+        android:textColor="@color/Blue"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView2"
@@ -33,9 +34,10 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView2"
         android:layout_alignLeft="@+id/textView1"
-        android:text="Address    "
+        android:text="Address:    "
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="@color/Blue" />
+        android:textColor="@color/Blue"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView4"
@@ -54,16 +56,16 @@
         android:layout_above="@+id/button11"
         android:layout_below="@+id/textView4"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp" />
 
     <Button
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginBottom="10dp"
         android:background="@drawable/buttonstyle"
-        android:layout_centerHorizontal="true"
         android:text="Apply" />
 
     <LinearLayout
@@ -72,7 +74,8 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/button1"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
         android:gravity="center_horizontal">
 
         <TextView
