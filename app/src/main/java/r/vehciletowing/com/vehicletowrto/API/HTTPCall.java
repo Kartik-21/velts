@@ -7,10 +7,8 @@ import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
 
-public class HTTPCall
-{
-    public String GET (String url)
-    {
+public class HTTPCall {
+    public String GET(String url) {
         String result = null;
 
         OkHttpClient client = new OkHttpClient();
@@ -19,21 +17,17 @@ public class HTTPCall
 
         Response response = null;
 
-        try
-        {
+        try {
             response = client.newCall(request).execute();
             result = response.body().string();
-        }
-        catch (IOException e)
-        {
+        } catch (IOException e) {
             e.printStackTrace();
         }
 
         return result;
     }
 
-    public String POST(String url, RequestBody requestBody)
-    {
+    public String POST(String url, RequestBody requestBody) {
         String result = null;
 
         OkHttpClient client = new OkHttpClient();
@@ -48,9 +42,7 @@ public class HTTPCall
         try {
             response = client.newCall(request).execute();
             result = response.body().string();
-        }
-        catch (IOException e)
-        {
+        } catch (IOException e) {
             e.printStackTrace();
         }
 

@@ -10,17 +10,25 @@ public class MyIotAcitvity extends AppCompatActivity {
 
     private WebView myweb;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_iot_acitvity);
 
-        myweb =(WebView)findViewById(R.id.webview1);
-
-        WebSettings webSettings = myweb.getSettings();
-        webSettings.setJavaScriptEnabled(true);
+        myweb = (WebView) findViewById(R.id.webview1);
+        myweb.getSettings().setJavaScriptEnabled(true);
         myweb.loadUrl("http://www.sk-infosoft.top/vehicletracking/login.php");
         myweb.setWebViewClient(new WebViewClient());
 
+
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        if (myweb.canGoBack()) {
+            myweb.goBack();
+        }
     }
 }

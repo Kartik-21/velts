@@ -6,17 +6,9 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
+    android:padding="5dp"
     tools:context=".Login">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimaryDark"
-        android:gravity="center"
-        android:orientation="vertical">
-
-
-    </LinearLayout>
 
     <TextView
 
@@ -33,21 +25,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:hint="Enter Email" />
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress" />
 
     <EditText
         android:id="@+id/EtLPass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:hint="Enter Password" />
+        android:layout_marginTop="10dp"
+        android:hint="Enter Password"
+        android:inputType="textPassword" />
 
     <Button
         android:id="@+id/btnLLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-
         android:background="@drawable/buttonstyle"
         android:text="   Login   "
         android:textColor="#ffffff" />
@@ -56,7 +49,7 @@
         android:id="@+id/tvLSignup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="40dp"
         android:gravity="center"
         android:text="Sign Up"
         android:textColor="#fe104d" />
@@ -65,7 +58,7 @@
         android:id="@+id/tvLforgot"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
         android:gravity="center"
         android:text="Forgot Password Click Here.."
         android:textColor="#fe104d" />

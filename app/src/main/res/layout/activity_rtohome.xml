@@ -8,38 +8,36 @@
 
     <Button
         android:id="@+id/button1"
-        android:textColor="#ffffff"
-        android:background="@drawable/buttonstyle"
-        android:drawableLeft="@drawable/d"
-
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginTop="80dp"
         android:layout_toLeftOf="@+id/imageView1"
         android:layout_toRightOf="@+id/imageView2"
-        android:text="     Check Documents     " />
+        android:background="@drawable/buttonstyle"
+        android:drawableLeft="@drawable/d"
+        android:text="     Check Documents     "
+        android:textColor="#ffffff" />
 
     <Button
         android:id="@+id/button2"
-        android:textColor="#ffffff"
-        android:background="@drawable/buttonstyle"
-        android:drawableLeft="@drawable/g"
-
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
         android:layout_alignLeft="@+id/button1"
         android:layout_alignRight="@+id/button1"
-        android:layout_below="@+id/button1"
-        android:layout_marginTop="10dp"
-        android:text="   Apply Penalty   " />
+        android:layout_marginTop="15dp"
+        android:background="@drawable/buttonstyle"
+        android:drawableLeft="@drawable/g"
+        android:text="   Apply Penalty   "
+        android:textColor="#ffffff" />
 
     <ImageView
         android:id="@+id/imageView1"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
         android:layout_margin="10dp"
         android:src="@drawable/logout" />
 
@@ -49,19 +47,20 @@
         android:layout_height="30dp"
         android:layout_alignParentLeft="true"
         android:layout_margin="10dp"
+        android:visibility="invisible"
         android:src="@drawable/home1" />
 
     <Button
         android:id="@+id/button3"
-        android:textColor="#ffffff"
-        android:background="@drawable/buttonstyle"
-        android:drawableLeft="@drawable/a"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/button2"
         android:layout_alignLeft="@+id/button2"
         android:layout_alignRight="@+id/button2"
-        android:layout_below="@+id/button2"
-        android:layout_marginTop="16dp"
-        android:text="    Show Fine List    " />
+        android:layout_marginTop="15dp"
+        android:background="@drawable/buttonstyle"
+        android:drawableLeft="@drawable/a"
+        android:text="    Show Fine List    "
+        android:textColor="#ffffff" />
 
 </RelativeLayout>

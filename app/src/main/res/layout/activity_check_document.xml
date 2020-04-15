@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="5dp"
     tools:context=".CheckDocumentActivity">
 
     <TextView
@@ -42,7 +43,7 @@
             android:id="@+id/rdo_vehicalno"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Vahical Number" />
+            android:text="Vehical Number" />
     </RadioGroup>
 
     <EditText
@@ -54,8 +55,7 @@
         android:layout_alignParentRight="true"
         android:layout_marginTop="7dp"
         android:ems="10"
-
-        android:hint="Enter here"></EditText>
+        android:hint="Enter here" />
 
     <Button
         android:id="@+id/button1"
@@ -64,7 +64,7 @@
         android:layout_below="@+id/editText1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
-
+        android:background="@drawable/buttonstyle"
         android:text="   Show Documents   " />
 
 </RelativeLayout>

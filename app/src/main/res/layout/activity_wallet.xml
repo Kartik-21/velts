@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="5dp"
     tools:context=".WalletActivity">
 
     <TextView
@@ -14,8 +15,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
         android:text="Available Wallet Balance"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-         />
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <LinearLayout
         android:id="@+id/linearLayout1"
@@ -42,50 +42,40 @@
 
     <Button
         android:id="@+id/button1"
-
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/linearLayout1"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp"
-        android:text="   Add Money to Wallet   "
-
-        android:textColor="#ffffff"
+        android:layout_marginTop="50dp"
         android:background="@drawable/buttonstyle"
-       />
-    />
+        android:text="   Add Money to Wallet   "
+        android:textColor="#ffffff" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignRight="@+id/listView1"
         android:layout_below="@+id/button1"
+        android:layout_alignRight="@+id/listView1"
+        android:layout_alignParentLeft="true"
         android:layout_marginTop="29dp"
         android:text="Your Transactions"
-
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <ListView
         android:id="@+id/listView1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView4"
-        >
-    </ListView>
+        android:layout_below="@+id/textView4" />
 
     <EditText
         android:id="@+id/editText1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/textView4"
         android:layout_below="@+id/linearLayout1"
+        android:layout_alignRight="@+id/textView4"
         android:ems="10"
         android:hint="Enter Amount"
-        android:inputType="number"
-        android:numeric="integer" >
-
-    </EditText>
+        android:inputType="number"/>
 
 </RelativeLayout>

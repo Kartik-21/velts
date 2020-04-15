@@ -4,50 +4,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="5dp"
     tools:context=".ForgotPass">
 
     <Button
         android:id="@+id/button1"
-
-        android:textColor="#ffffff"
-        android:background="@drawable/buttonstyle"
-
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/editText1"
         android:layout_alignLeft="@+id/editText1"
         android:layout_alignRight="@+id/editText1"
-        android:layout_below="@+id/editText1"
         android:layout_marginTop="7dp"
-        android:text="Send " />
+        android:background="@drawable/buttonstyle"
+        android:text="Send"
+        android:textColor="#ffffff" />
 
     <EditText
         android:id="@+id/editText1"
-
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
         android:layout_marginTop="200dp"
         android:ems="10"
-        android:inputType="textEmailAddress"
-        android:hint="Email" >
-
+        android:hint="Email"
+        android:inputType="textEmailAddress">
         <requestFocus />
     </EditText>
 
     <TextView
         android:id="@+id/textView1"
-
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/button1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="18dp"
         android:text="Click here to login"
-        android:textColor="@color/pink"
         android:textAppearance="?android:attr/textAppearanceMedium"
-
+        android:textColor="@color/pink"
         android:textStyle="italic" />
 
 </RelativeLayout>

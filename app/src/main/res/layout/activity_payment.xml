@@ -4,62 +4,62 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="5dp"
     tools:context=".PaymentActivity">
 
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:textColor="#9f9f9f"
         android:layout_below="@+id/textView6"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
         android:text="SELECT AN OPTION TO PAY"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#9f9f9f" />
 
     <Spinner
         android:id="@+id/spinner1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_marginTop="5dp"
-        android:background="#B7EEF7"
-        android:layout_below="@+id/textView1" />
+        android:background="#B7EEF7" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/spinner1"
         android:layout_below="@+id/spinner1"
+        android:layout_alignLeft="@+id/spinner1"
         android:layout_marginTop="5dp"
-        android:textColor="#9f9f9f"
-        android:text="ENTER CARD NUMBER"/>
+        android:text="ENTER CARD NUMBER"
+        android:textColor="#9f9f9f" />
 
     <EditText
         android:id="@+id/editText1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView2"
         android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
         android:layout_marginTop="5dp"
         android:ems="4"
-        android:maxLength="4"
         android:hint=""
-        android:numeric="integer" >
-
-    </EditText>
+        android:inputType="number"
+        android:maxLength="4" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText1"
         android:layout_below="@+id/editText1"
-        android:text="   MONTH   "
+        android:layout_alignLeft="@+id/editText1"
         android:layout_marginTop="10dp"
-        android:textColor="#9f9f9f"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:text="   MONTH   "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#9f9f9f" />
 
     <TextView
         android:id="@+id/textView4"
@@ -67,20 +67,19 @@
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/textView3"
         android:layout_alignBottom="@+id/textView3"
-        android:layout_toRightOf="@+id/textView3"
-        android:text="   YEAR   "
         android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@+id/textView3"
         android:inputType="number"
-        android:textColor="#9f9f9f"
-        android:numeric="integer"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:text="   YEAR   "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#9f9f9f" />
 
     <Spinner
         android:id="@+id/spinner2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView3"
         android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/textView3"
         android:layout_toLeftOf="@+id/textView4" />
 
     <Spinner
@@ -88,53 +87,50 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textView4"
-        android:layout_alignRight="@+id/spinner1"
-        android:layout_alignTop="@+id/spinner2" />
+        android:layout_alignTop="@+id/spinner2"
+        android:layout_alignRight="@+id/spinner1" />
 
     <EditText
         android:id="@+id/editText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/spinner2"
         android:layout_below="@+id/spinner2"
-        android:maxLength="3"
-        android:inputType="numberSigned"
+        android:layout_alignLeft="@+id/spinner2"
+        android:layout_marginTop="5dp"
         android:layout_toLeftOf="@+id/spinner3"
         android:ems="10"
-        android:layout_marginTop="5dp"/>
+        android:inputType="numberSigned"
+        android:maxLength="3" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/editText2"
+        android:layout_marginTop="5dp"
         android:layout_toRightOf="@+id/editText2"
         android:text="  CVV  "
-        android:textColor="#9f9f9f"
-        android:layout_marginTop="5dp"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#9f9f9f" />
 
     <ImageView
         android:id="@+id/imageView1"
         android:layout_width="60dp"
         android:layout_height="30dp"
         android:layout_alignBottom="@+id/textView5"
-        android:layout_toRightOf="@+id/textView5"
-        />
+        android:layout_toRightOf="@+id/textView5" />
 
     <Button
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/editText2"
         android:layout_alignLeft="@+id/editText2"
         android:layout_alignRight="@+id/spinner3"
-        android:layout_below="@+id/editText2"
         android:layout_marginTop="18dp"
-        android:text="Pay now"
-        android:textColor="#ffffff"
         android:background="@drawable/buttonstyle"
-
-        />
+        android:text="Pay now"
+        android:textColor="#ffffff" />
 
     <EditText
         android:id="@+id/editText4"
@@ -142,10 +138,10 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/textView3"
         android:layout_toRightOf="@+id/editText3"
-        android:maxLength="4"
-        android:hint=""
         android:ems="4"
-        android:numeric="integer"/>
+        android:hint=""
+        android:inputType="number"
+        android:maxLength="4" />
 
     <EditText
         android:id="@+id/editText3"
@@ -153,11 +149,11 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/textView3"
         android:layout_toRightOf="@+id/editText1"
-        android:maxLength="4"
-        android:hint=""
         android:ems="4"
-        android:numeric="integer">
-    </EditText>
+        android:hint=""
+        android:inputType="number"
+        android:maxLength="4"
+         />
 
     <EditText
         android:id="@+id/editText5"
@@ -165,19 +161,20 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/textView3"
         android:layout_toRightOf="@+id/editText4"
-        android:maxLength="4"
-        android:hint=""
         android:ems="4"
-        android:numeric="integer" />
+        android:hint=""
+        android:inputType="number"
+        android:maxLength="4"
+         />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:text="Large Text"
-
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:text="Large Text"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
 

@@ -12,9 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/button11"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true">
-
-    </ListView>
+        android:layout_centerHorizontal="true"/>
 
     <Button
         android:id="@+id/button1"
@@ -22,6 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
         android:background="@drawable/buttonstyle"
         android:text="Pay Online"
         android:textColor="#ffffff" />
@@ -32,6 +31,7 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/button1"
         android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
         android:gravity="center_horizontal">
 
         <TextView

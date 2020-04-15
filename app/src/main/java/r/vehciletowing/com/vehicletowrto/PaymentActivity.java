@@ -72,18 +72,18 @@ public class PaymentActivity extends AppCompatActivity implements View.OnClickLi
         sstype = extra.getString("type").toString().trim();
         ssdate = extra.getString("date").toString().trim();
 
-        txtamount  = (TextView)findViewById(R.id.textView6);
-        txtamount.setText("Pay "+ssamount+" Rs");
+        txtamount = (TextView) findViewById(R.id.textView6);
+        txtamount.setText("Pay " + ssamount + " Rs");
 
-        spintype = (Spinner)findViewById(R.id.spinner1);
-        spinmonth = (Spinner)findViewById(R.id.spinner2);
-        spinyear = (Spinner)findViewById(R.id.spinner3);
+        spintype = (Spinner) findViewById(R.id.spinner1);
+        spinmonth = (Spinner) findViewById(R.id.spinner2);
+        spinyear = (Spinner) findViewById(R.id.spinner3);
 
-        editcno1 = (EditText)findViewById(R.id.editText1);
-        editcno2 = (EditText)findViewById(R.id.editText3);
-        editcno3 = (EditText)findViewById(R.id.editText4);
-        editcno4 = (EditText)findViewById(R.id.editText5);
-        editcvv = (EditText)findViewById(R.id.editText2);
+        editcno1 = (EditText) findViewById(R.id.editText1);
+        editcno2 = (EditText) findViewById(R.id.editText3);
+        editcno3 = (EditText) findViewById(R.id.editText4);
+        editcno4 = (EditText) findViewById(R.id.editText5);
+        editcvv = (EditText) findViewById(R.id.editText2);
 
         types = new ArrayList<String>();
         months = new ArrayList<String>();
@@ -107,9 +107,9 @@ public class PaymentActivity extends AppCompatActivity implements View.OnClickLi
         months.add("12");
 
         years.add("YY");
-        years.add("2017");
-        years.add("2018");
-        years.add("2019");
+        //  years.add("2017");
+        // years.add("2018");
+        //years.add("2019");
         years.add("2020");
         years.add("2021");
         years.add("2022");
@@ -120,9 +120,9 @@ public class PaymentActivity extends AppCompatActivity implements View.OnClickLi
         years.add("2027");
         years.add("2028");
 
-        adpater1= new ArrayAdapter<String>(PaymentActivity.this,android.R.layout.simple_spinner_dropdown_item,types);
-        adpater2= new ArrayAdapter<String>(PaymentActivity.this,android.R.layout.simple_spinner_dropdown_item,months);
-        adpater3= new ArrayAdapter<String>(PaymentActivity.this,android.R.layout.simple_spinner_dropdown_item,years);
+        adpater1 = new ArrayAdapter<String>(PaymentActivity.this, android.R.layout.simple_spinner_dropdown_item, types);
+        adpater2 = new ArrayAdapter<String>(PaymentActivity.this, android.R.layout.simple_spinner_dropdown_item, months);
+        adpater3 = new ArrayAdapter<String>(PaymentActivity.this, android.R.layout.simple_spinner_dropdown_item, years);
 
         spintype.setAdapter(adpater1);
         spinmonth.setAdapter(adpater2);
@@ -130,15 +130,13 @@ public class PaymentActivity extends AppCompatActivity implements View.OnClickLi
 
         editcno1.addTextChangedListener(new TextWatcher() {
 
-            public void onTextChanged(CharSequence s, int start,int before, int count)
-            {
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
                 // TODO Auto-generated method stub
-                if(editcno1.getText().toString().length()==4)     //size as per your requirement
+                if (editcno1.getText().toString().length() == 4)     //size as per your requirement
                 {
                     editcno2.requestFocus();
                 }
             }
-
 
 
             public void beforeTextChanged(CharSequence s, int start,
@@ -146,6 +144,7 @@ public class PaymentActivity extends AppCompatActivity implements View.OnClickLi
                 // TODO Auto-generated method stub
 
             }
+
             @Override
             public void afterTextChanged(Editable s) {
                 // TODO Auto-generated method stub
@@ -153,19 +152,18 @@ public class PaymentActivity extends AppCompatActivity implements View.OnClickLi
             }
 
 
-
         });
 
         editcno2.addTextChangedListener(new TextWatcher() {
 
-            public void onTextChanged(CharSequence s, int start,int before, int count)
-            {
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
                 // TODO Auto-generated method stub
-                if(editcno2.getText().toString().length()==4)     //size as per your requirement
+                if (editcno2.getText().toString().length() == 4)     //size as per your requirement
                 {
                     editcno3.requestFocus();
                 }
             }
+
             public void beforeTextChanged(CharSequence s, int start,
                                           int count, int after) {
                 // TODO Auto-generated method stub
@@ -181,14 +179,14 @@ public class PaymentActivity extends AppCompatActivity implements View.OnClickLi
 
         editcno3.addTextChangedListener(new TextWatcher() {
 
-            public void onTextChanged(CharSequence s, int start,int before, int count)
-            {
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
                 // TODO Auto-generated method stub
-                if(editcno3.getText().toString().length()==4)     //size as per your requirement
+                if (editcno3.getText().toString().length() == 4)     //size as per your requirement
                 {
                     editcno4.requestFocus();
                 }
             }
+
             public void beforeTextChanged(CharSequence s, int start,
                                           int count, int after) {
                 // TODO Auto-generated method stub
@@ -204,7 +202,7 @@ public class PaymentActivity extends AppCompatActivity implements View.OnClickLi
         //	 editcno1.addTextChangedListener(new FourDigitCardFormatWatcher());
         //	 editcno2.addTextChangedListener(new FourDigitCardFormatWatcher());
 
-        btnPay = (Button)findViewById(R.id.button1);
+        btnPay = (Button) findViewById(R.id.button1);
         btnPay.setOnClickListener(this);
     }
 
@@ -245,8 +243,7 @@ public class PaymentActivity extends AppCompatActivity implements View.OnClickLi
     @Override
     public void onClick(View v) {
 
-        if(v==btnPay)
-        {
+        if (v == btnPay) {
             scno1 = editcno1.getText().toString().trim();
             scno2 = editcno2.getText().toString().trim();
             scno3 = editcno3.getText().toString().trim();
@@ -256,27 +253,19 @@ public class PaymentActivity extends AppCompatActivity implements View.OnClickLi
             smm = spinmonth.getSelectedItem().toString().trim();
             syy = spinyear.getSelectedItem().toString().trim();
 
-            scno =(new StringBuilder()).append(scno1).append(scno2).append(scno3).append(scno4).toString();
+            scno = (new StringBuilder()).append(scno1).append(scno2).append(scno3).append(scno4).toString();
 
-            if(scno1.equals("") || scno2.equals("") || scno3.equals("") || scno4.equals(""))
-            {
-                Toast.makeText(PaymentActivity.this,"Enter Valid Card Number",Toast.LENGTH_SHORT).show();
+            if (scno1.equals("") || scno2.equals("") || scno3.equals("") || scno4.equals("")) {
+                Toast.makeText(PaymentActivity.this, "Enter Valid Card Number", Toast.LENGTH_SHORT).show();
                 return;
-            }
-            else if(scno.length()==16)
-            {
-                if(smm.contains("MM") || syy.contains("YY"))
-                {
-                    Toast.makeText(PaymentActivity.this,"Select Valid Expiry Date",Toast.LENGTH_SHORT).show();
+            } else if (scno.length() == 16) {
+                if (smm.contains("MM") || syy.contains("YY")) {
+                    Toast.makeText(PaymentActivity.this, "Select Valid Expiry Date", Toast.LENGTH_SHORT).show();
                     return;
-                }
-                else if(scvv.equals(""))
-                {
-                    Toast.makeText(PaymentActivity.this,"Enter CVV",Toast.LENGTH_SHORT).show();
+                } else if (scvv.equals("")) {
+                    Toast.makeText(PaymentActivity.this, "Enter CVV", Toast.LENGTH_SHORT).show();
                     return;
-                }
-                else if(scvv.length()==3)
-                {
+                } else if (scvv.length() == 3) {
                     Date cdate = new Date();
                     fdate = new SimpleDateFormat("dd/MM/yyyy").format(cdate);
 
@@ -284,16 +273,12 @@ public class PaymentActivity extends AppCompatActivity implements View.OnClickLi
                     ftime = new SimpleDateFormat("hh:mm").format(cdate1);
 
                     new PostPayment().execute();
-                }
-                else
-                {
-                    Toast.makeText(PaymentActivity.this,"Enter Valid CVV",Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(PaymentActivity.this, "Enter Valid CVV", Toast.LENGTH_SHORT).show();
                     return;
                 }
-            }
-            else
-            {
-                Toast.makeText(PaymentActivity.this,"Enter Valid Card Number", Toast.LENGTH_SHORT).show();
+            } else {
+                Toast.makeText(PaymentActivity.this, "Enter Valid Card Number", Toast.LENGTH_SHORT).show();
                 return;
             }
         }
@@ -319,7 +304,7 @@ public class PaymentActivity extends AppCompatActivity implements View.OnClickLi
         protected String doInBackground(Void... params) {
             // TODO Auto-generated method stub
             APICall api = new APICall();
-            String result =api.PostWalletAmount(uid, ssamount, fdate, ftime,sstype,ssdate);
+            String result = api.PostWalletAmount(uid, ssamount, fdate, ftime, sstype, ssdate);
             return result;
 
         }
@@ -327,17 +312,15 @@ public class PaymentActivity extends AppCompatActivity implements View.OnClickLi
         @Override
         protected void onPostExecute(String result) {
             // TODO Auto-generated method stub
-            if (result != null)
-            {
+            if (result != null) {
                 Toast.makeText(PaymentActivity.this, result, Toast.LENGTH_LONG).show();
 
-                if (result.contains("Added..!")){
-                    startActivity(new Intent(PaymentActivity.this,HomeActivity.class));
+                if (result.contains("Added..!")) {
+                    startActivity(new Intent(PaymentActivity.this, HomeActivity.class));
                     finish();
                 }
 
-                if(result.contains("Done"))
-                {
+                if (result.contains("Done")) {
                     finish();
                 }
 
