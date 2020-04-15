@@ -1,0 +1,71 @@
+[29-Oct-2019 09:44:43] PHP Notice:  Undefined index:  user in /home/skinfoso/public_html/vehicletracking/index.php on line 4
+[04-Nov-2019 16:20:30] PHP Notice:  Undefined index:  user in /home/skinfoso/public_html/vehicletracking/index.php on line 4
+[04-Nov-2019 17:34:43] PHP Notice:  Undefined index:  user in /home/skinfoso/public_html/vehicletracking/index.php on line 4
+[04-Nov-2019 18:23:29] PHP Notice:  Undefined index:  user in /home/skinfoso/public_html/vehicletracking/index.php on line 4
+[04-Nov-2019 18:43:12] PHP Notice:  Undefined index:  user in /home/skinfoso/public_html/vehicletracking/index.php on line 4
+[04-Nov-2019 21:15:10] PHP Notice:  Undefined index:  user in /home/skinfoso/public_html/vehicletracking/index.php on line 4
+[04-Nov-2019 21:53:26] PHP Notice:  Undefined index:  user in /home/skinfoso/public_html/vehicletracking/index.php on line 4
+[17-Nov-2019 20:13:46] PHP Notice:  Undefined index:  user in /home/skinfoso/public_html/vehicletracking/index.php on line 4
+[14-Dec-2019 10:32:21] PHP Notice:  Undefined index:  user in /home/skinfoso/public_html/vehicletracking/index.php on line 4
+[16-Dec-2019 09:43:36] PHP Notice:  Undefined index:  user in /home/skinfoso/public_html/vehicletracking/index.php on line 4
+[16-Dec-2019 10:11:30] PHP Notice:  Undefined index:  user in /home/skinfoso/public_html/vehicletracking/index.php on line 4
+[16-Dec-2019 10:25:15] PHP Notice:  Undefined index:  user in /home/skinfoso/public_html/vehicletracking/show_data.php on line 5
+[30-Dec-2019 12:22:55] PHP Notice:  Undefined index:  user in /home/skinfoso/public_html/vehicletracking/index.php on line 4
+[24-Jan-2020 17:28:30] PHP Notice:  Undefined index:  user in /home/skinfoso/public_html/vehicletracking/index.php on line 4
+[24-Jan-2020 17:28:35] PHP Notice:  Undefined index:  user in /home/skinfoso/public_html/vehicletracking/index.php on line 4
+[28-Feb-2020 21:00:47] PHP Notice:  Undefined index:  user in /home/skinfoso/public_html/vehicletracking/index.php on line 4
+[09-Mar-2020 08:54:37] PHP Notice:  Undefined index:  user in /home/skinfoso/public_html/vehicletracking/index.php on line 4
+[09-Mar-2020 10:41:15] PHP Warning:  mysqli_connect() [<a href='function.mysqli-connect'>function.mysqli-connect</a>]: (HY000/1040): Too many connections in /home/skinfoso/public_html/vehicletracking/vib.php on line 3
+[09-Mar-2020 10:41:15] PHP Warning:  mysqli_connect() [<a href='function.mysqli-connect'>function.mysqli-connect</a>]: (HY000/1040): Too many connections in /home/skinfoso/public_html/vehicletracking/fall.php on line 3
+[09-Mar-2020 10:41:15] PHP Warning:  mysqli_connect() [<a href='function.mysqli-connect'>function.mysqli-connect</a>]: (HY000/1040): Too many connections in /home/skinfoso/public_html/vehicletracking/fall.php on line 3
+[09-Mar-2020 10:41:17] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/skinfoso/public_html/vehicletracking/vib.php on line 5
+[09-Mar-2020 10:41:17] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/skinfoso/public_html/vehicletracking/fall.php on line 5
+[09-Mar-2020 10:41:17] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/skinfoso/public_html/vehicletracking/fall.php on line 6
+[09-Mar-2020 10:41:17] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/skinfoso/public_html/vehicletracking/fall.php on line 5
+[09-Mar-2020 10:41:17] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/skinfoso/public_html/vehicletracking/fall.php on line 6
+[09-Mar-2020 10:41:17] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/skinfoso/public_html/vehicletracking/vib.php on line 6
+[09-Mar-2020 10:41:15] PHP Warning:  mysqli_connect() [<a href='function.mysqli-connect'>function.mysqli-connect</a>]: (HY000/1040): Too many connections in /home/skinfoso/public_html/vehicletracking/vib.php on line 3
+[09-Mar-2020 10:41:17] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/skinfoso/public_html/vehicletracking/vib.php on line 5
+[09-Mar-2020 10:41:17] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/skinfoso/public_html/vehicletracking/vib.php on line 6
+[09-Mar-2020 10:41:15] PHP Warning:  mysqli_connect() [<a href='function.mysqli-connect'>function.mysqli-connect</a>]: (HY000/1040): Too many connections in /home/skinfoso/public_html/vehicletracking/acl.php on line 3
+[09-Mar-2020 10:41:17] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/skinfoso/public_html/vehicletracking/acl.php on line 5
+[09-Mar-2020 10:41:17] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/skinfoso/public_html/vehicletracking/acl.php on line 6
+[09-Mar-2020 10:41:15] PHP Warning:  mysqli_connect() [<a href='function.mysqli-connect'>function.mysqli-connect</a>]: (HY000/1040): Too many connections in /home/skinfoso/public_html/vehicletracking/acl.php on line 3
+[09-Mar-2020 10:41:17] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/skinfoso/public_html/vehicletracking/acl.php on line 5
+[09-Mar-2020 10:41:17] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/skinfoso/public_html/vehicletracking/acl.php on line 6
+[09-Mar-2020 10:41:30] PHP Warning:  mysqli_connect() [<a href='function.mysqli-connect'>function.mysqli-connect</a>]: (HY000/1040): Too many connections in /home/skinfoso/public_html/vehicletracking/fall.php on line 3
+[09-Mar-2020 10:41:30] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/skinfoso/public_html/vehicletracking/fall.php on line 5
+[09-Mar-2020 10:41:30] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/skinfoso/public_html/vehicletracking/fall.php on line 6
+[09-Mar-2020 10:41:30] PHP Warning:  mysqli_connect() [<a href='function.mysqli-connect'>function.mysqli-connect</a>]: (08004/1040): Too many connections in /home/skinfoso/public_html/vehicletracking/fall.php on line 3
+[09-Mar-2020 10:41:30] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/skinfoso/public_html/vehicletracking/fall.php on line 5
+[09-Mar-2020 10:41:30] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/skinfoso/public_html/vehicletracking/fall.php on line 6
+[09-Mar-2020 10:41:30] PHP Warning:  mysqli_connect() [<a href='function.mysqli-connect'>function.mysqli-connect</a>]: (HY000/1040): Too many connections in /home/skinfoso/public_html/vehicletracking/acl.php on line 3
+[09-Mar-2020 10:41:30] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/skinfoso/public_html/vehicletracking/acl.php on line 5
+[09-Mar-2020 10:41:30] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/skinfoso/public_html/vehicletracking/acl.php on line 6
+[09-Mar-2020 10:41:30] PHP Warning:  mysqli_connect() [<a href='function.mysqli-connect'>function.mysqli-connect</a>]: (08004/1040): Too many connections in /home/skinfoso/public_html/vehicletracking/acl.php on line 3
+[09-Mar-2020 10:41:30] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/skinfoso/public_html/vehicletracking/acl.php on line 5
+[09-Mar-2020 10:41:30] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/skinfoso/public_html/vehicletracking/acl.php on line 6
+[09-Mar-2020 10:41:30] PHP Warning:  mysqli_connect() [<a href='function.mysqli-connect'>function.mysqli-connect</a>]: (08004/1040): Too many connections in /home/skinfoso/public_html/vehicletracking/vib.php on line 3
+[09-Mar-2020 10:41:30] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/skinfoso/public_html/vehicletracking/vib.php on line 5
+[09-Mar-2020 10:41:30] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/skinfoso/public_html/vehicletracking/vib.php on line 6
+[09-Mar-2020 10:41:38] PHP Warning:  mysqli_connect() [<a href='function.mysqli-connect'>function.mysqli-connect</a>]: (08004/1040): Too many connections in /home/skinfoso/public_html/vehicletracking/fall.php on line 3
+[09-Mar-2020 10:41:38] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/skinfoso/public_html/vehicletracking/fall.php on line 5
+[09-Mar-2020 10:41:38] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/skinfoso/public_html/vehicletracking/fall.php on line 6
+[09-Mar-2020 10:41:38] PHP Warning:  mysqli_connect() [<a href='function.mysqli-connect'>function.mysqli-connect</a>]: (08004/1040): Too many connections in /home/skinfoso/public_html/vehicletracking/acl.php on line 3
+[09-Mar-2020 10:41:38] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/skinfoso/public_html/vehicletracking/acl.php on line 5
+[09-Mar-2020 10:41:38] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/skinfoso/public_html/vehicletracking/acl.php on line 6
+[09-Mar-2020 10:41:48] PHP Warning:  mysqli_connect() [<a href='function.mysqli-connect'>function.mysqli-connect</a>]: (HY000/1040): Too many connections in /home/skinfoso/public_html/vehicletracking/acl.php on line 3
+[09-Mar-2020 10:41:49] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/skinfoso/public_html/vehicletracking/acl.php on line 5
+[09-Mar-2020 10:41:49] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/skinfoso/public_html/vehicletracking/acl.php on line 6
+[09-Mar-2020 10:41:48] PHP Warning:  mysqli_connect() [<a href='function.mysqli-connect'>function.mysqli-connect</a>]: (HY000/1040): Too many connections in /home/skinfoso/public_html/vehicletracking/vib.php on line 3
+[09-Mar-2020 10:41:49] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/skinfoso/public_html/vehicletracking/vib.php on line 5
+[09-Mar-2020 10:41:49] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/skinfoso/public_html/vehicletracking/vib.php on line 6
+[09-Mar-2020 10:41:50] PHP Warning:  mysqli_connect() [<a href='function.mysqli-connect'>function.mysqli-connect</a>]: (08004/1040): Too many connections in /home/skinfoso/public_html/vehicletracking/vib.php on line 3
+[09-Mar-2020 10:41:50] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/skinfoso/public_html/vehicletracking/vib.php on line 5
+[09-Mar-2020 10:41:50] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/skinfoso/public_html/vehicletracking/vib.php on line 6
+[12-Mar-2020 10:45:28] PHP Notice:  Undefined index:  user in /home/skinfoso/public_html/vehicletracking/show_data.php on line 5
+[13-Mar-2020 11:13:27] PHP Notice:  Undefined index:  user in /home/skinfoso/public_html/vehicletracking/index.php on line 4
+[15-Mar-2020 09:37:24] PHP Notice:  Undefined index:  user in /home/skinfoso/public_html/vehicletracking/index.php on line 4
+[15-Mar-2020 09:37:30] PHP Notice:  Undefined index:  user in /home/skinfoso/public_html/vehicletracking/index.php on line 4
+[15-Mar-2020 09:37:35] PHP Notice:  Undefined index:  user in /home/skinfoso/public_html/vehicletracking/index.php on line 4
+[15-Mar-2020 17:13:58] PHP Notice:  Undefined index:  user in /home/skinfoso/public_html/vehicletracking/index.php on line 4
