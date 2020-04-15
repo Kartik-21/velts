@@ -1,0 +1,18 @@
+[07-May-2018 16:20:06 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/rittz/public_html/2018/RTO/Update_Doc.php on line 23
+[07-May-2018 16:21:34 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/rittz/public_html/2018/RTO/Update_Doc.php on line 25
+[07-May-2018 16:22:55 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/rittz/public_html/2018/RTO/Update_Doc.php on line 25
+[07-May-2018 16:23:33 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/rittz/public_html/2018/RTO/Update_Doc.php on line 25
+[07-May-2018 16:23:34 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/rittz/public_html/2018/RTO/Update_Doc.php on line 25
+[07-May-2018 16:24:05 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/rittz/public_html/2018/RTO/Update_Doc.php on line 25
+[07-May-2018 16:24:08 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/rittz/public_html/2018/RTO/Update_Doc.php on line 25
+[07-May-2018 16:24:38 Etc/GMT] PHP Notice:  Undefined index: v1 in /home/rittz/public_html/2018/RTO/Login.php on line 7
+[07-May-2018 16:24:38 Etc/GMT] PHP Notice:  Undefined index: v2 in /home/rittz/public_html/2018/RTO/Login.php on line 8
+[07-May-2018 16:57:27 Etc/GMT] PHP Notice:  Undefined index: v1 in /home/rittz/public_html/2018/RTO/Del_Doc1.php on line 8
+[07-May-2018 16:58:33 Etc/GMT] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/rittz/public_html/2018/RTO/Del_Doc1.php on line 17
+[07-May-2018 16:58:53 Etc/GMT] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/rittz/public_html/2018/RTO/Del_Doc1.php on line 17
+[07-May-2018 16:59:21 Etc/GMT] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/rittz/public_html/2018/RTO/Del_Doc1.php on line 17
+[07-May-2018 16:59:28 Etc/GMT] PHP Notice:  Undefined index: uid in /home/rittz/public_html/2018/RTO/Show_Uploads.php on line 8
+[07-May-2018 16:59:28 Etc/GMT] PHP Notice:  Undefined variable: uid in /home/rittz/public_html/2018/RTO/Show_Uploads.php on line 28
+[07-May-2018 17:00:24 Etc/GMT] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/rittz/public_html/2018/RTO/Del_Doc1.php on line 17
+[07-May-2018 17:01:44 Etc/GMT] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/rittz/public_html/2018/RTO/Del_Doc1.php on line 18
+[07-May-2018 17:02:35 Etc/GMT] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/rittz/public_html/2018/RTO/Del_Doc1.php on line 18
