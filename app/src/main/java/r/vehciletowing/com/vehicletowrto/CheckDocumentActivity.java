@@ -66,7 +66,7 @@ public class CheckDocumentActivity extends AppCompatActivity implements View.OnC
                 } else {
                     new CheckDoc().execute();
                 }
-            } else if (schoice.contains("Vahical Number")) {
+            } else if (schoice.contains("Vehical Number")) {
                 //           if (!valid.isValidAadhar(snumber.trim())) {
                 //             editnumber.setError("Enter Valid Aadhar No");
                 //               return;

@@ -38,7 +38,7 @@ public class CheckDocument1Activity extends AppCompatActivity implements View.On
         extra = getIntent().getExtras();
         result1 = extra.getString("result").toString().trim();
 
-        list = (ListView)findViewById(R.id.listView1);
+        list = (ListView) findViewById(R.id.listView1);
 
         ResultList = new ArrayList<User>();
 
@@ -46,14 +46,12 @@ public class CheckDocument1Activity extends AppCompatActivity implements View.On
         list.setAdapter(adpaterList);
 
 
-        if(!result1.equals(""))
-        {
+        if (!result1.equals("")) {
             new GetAllDocs().execute();
         }
     }
 
-    public class GetAllDocs extends AsyncTask<Void,Void,AllUser>
-    {
+    public class GetAllDocs extends AsyncTask<Void, Void, AllUser> {
         private ProgressDialog dialog;
 
         @Override
@@ -78,13 +76,10 @@ public class CheckDocument1Activity extends AppCompatActivity implements View.On
         @Override
         protected void onPostExecute(AllUser result) {
             // TODO Auto-generated method stub
-            if(result !=null)
-            {
+            if (result != null) {
                 ResultList.clear();
                 ResultList.addAll(result.getData());
-            }
-            else
-            {
+            } else {
 
             }
             adpaterList.notifyDataSetChanged();
@@ -95,18 +90,15 @@ public class CheckDocument1Activity extends AppCompatActivity implements View.On
 
     }
 
-    public class ResultAdapter extends BaseAdapter
-    {
-
+    public class ResultAdapter extends BaseAdapter {
 
 
         private ViewHolder Holder;
 
         @Override
-        public int getCount()
-        {
+        public int getCount() {
             // TODO Auto-generated method stub
-            return ResultList.size() ;
+            return ResultList.size();
         }
 
         @Override
@@ -125,40 +117,36 @@ public class CheckDocument1Activity extends AppCompatActivity implements View.On
         public View getView(final int position, View convertView, ViewGroup parent) {
             // TODO Auto-generated method stub
 
-            if(convertView==null)
-            {
-                convertView = getLayoutInflater().inflate(R.layout.item_mqp_layout,parent,false);
+            if (convertView == null) {
+                convertView = getLayoutInflater().inflate(R.layout.item_upload_card_inspector_layout, parent, false);
 
                 Holder = new ViewHolder();
-                Holder.title = (TextView)convertView.findViewById(R.id.textView2);
-                Holder.document = (TextView)convertView.findViewById(R.id.textView4);
-                Holder.img = (ImageView)convertView.findViewById(R.id.imageView1);
+                Holder.title = (TextView) convertView.findViewById(R.id.textView2);
+                Holder.document = (TextView) convertView.findViewById(R.id.textView4);
+                Holder.img = (ImageView) convertView.findViewById(R.id.imageView1);
 
-                Holder.btn_Delete= (Button) convertView.findViewById(R.id.btnDele);
+       //         Holder.btn_Delete = (Button) convertView.findViewById(R.id.btnDele);
 
                 convertView.setTag(Holder);
-            }
-            else
-            {
-                Holder = (ViewHolder)convertView.getTag();
+            } else {
+                Holder = (ViewHolder) convertView.getTag();
             }
 
             Holder.title.setText(ResultList.get(position).getTitle().toString());
             Holder.document.setText(ResultList.get(position).getUType().toString());
 
-            Holder.btn_Delete.setVisibility(View.GONE);
+//            Holder.btn_Delete.setVisibility(View.GONE);
 
             String path = ResultList.get(position).getImage().toString().trim();
 
-            if(path!="")
-            {
+            if (path != "") {
 
                 Picasso.get()
-                        .load(APIResource.BASE_URL +path)
+                        .load(APIResource.BASE_URL + path)
                         .fit()
                         .into(Holder.img);
 
-             //   Picasso.with(getApplicationContext()).load(APIResource.BASE_URL+path).into(Holder.img);
+                //   Picasso.with(getApplicationContext()).load(APIResource.BASE_URL+path).into(Holder.img);
 
             }
             return convertView;
@@ -166,14 +154,11 @@ public class CheckDocument1Activity extends AppCompatActivity implements View.On
     }
 
 
-    private static class ViewHolder
-    {
-        TextView title,document;
+    private static class ViewHolder {
+        TextView title, document;
         ImageView img;
-        Button btn_Delete;
+       // Button btn_Delete;
     }
-
-
 
 
     @Override

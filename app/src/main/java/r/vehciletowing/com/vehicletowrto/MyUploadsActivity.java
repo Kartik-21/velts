@@ -123,7 +123,7 @@ public class MyUploadsActivity extends AppCompatActivity {
             // TODO Auto-generated method stub
 
             if (convertView == null) {
-                convertView = getLayoutInflater().inflate(R.layout.item_mqp_layout, parent, false);
+                convertView = getLayoutInflater().inflate(R.layout.item_upload_card_layout, parent, false);
 
                 Holder = new ViewHolder();
                 Holder.title = (TextView) convertView.findViewById(R.id.textView2);

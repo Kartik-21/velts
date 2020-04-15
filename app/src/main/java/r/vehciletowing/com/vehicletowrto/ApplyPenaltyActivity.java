@@ -114,7 +114,7 @@ public class ApplyPenaltyActivity extends AppCompatActivity implements View.OnCl
                 {
                     new GetUserDetail().execute();
                 }
-            }else if (schoice.contains("Vahical Number")) {
+            }else if (schoice.contains("Vehical Number")) {
                 //           if (!valid.isValidAadhar(snumber.trim())) {
                 //             editnumber.setError("Enter Valid Aadhar No");
                 //               return;
