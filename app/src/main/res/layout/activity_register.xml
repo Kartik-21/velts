@@ -3,109 +3,122 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="5dp"
     tools:context=".Register">
 
-    <TextView
-        android:id="@+id/tvTitler"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Registration Form"
-        android:textColor="@color/pink"
-        android:textSize="25dp"
-        android:textStyle="bold" />
+        android:layout_height="wrap_content">
 
-    <EditText
-        android:id="@+id/EtName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:hint="User Name"
-        android:inputType="textCapWords" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
 
-    <EditText
-        android:id="@+id/EtAddress"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:hint="Address"
-        android:inputType="textCapWords" />
+            <TextView
+                android:id="@+id/tvTitler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Registration Form"
+                android:textColor="@color/pink"
+                android:textSize="25dp"
+                android:textStyle="bold" />
 
-    <Spinner
-        android:id="@+id/spinDistrict"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/EtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="User Name"
+                android:inputType="textCapWords" />
 
-    <Spinner
-        android:id="@+id/spinCity"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/EtAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Address"
+                android:inputType="textCapWords" />
+
+            <Spinner
+                android:id="@+id/spinDistrict"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:id="@+id/spinCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
 
-    <EditText
-        android:id="@+id/EtAdharNo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:hint="Adhar No"
-        android:inputType="number"
-        android:maxLength="12"
-        android:minEms="12" />
+            <EditText
+                android:id="@+id/EtAdharNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Adhar No"
+                android:inputType="number"
+                android:maxLength="12"
+                android:minEms="12" />
 
-    <EditText
-        android:id="@+id/et_vehicalno"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:inputType="textCapCharacters"
-        android:hint="Vehical No  ex.(GJ01AB1234)" />
+            <EditText
+                android:id="@+id/et_vehicalno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Vehical No  ex.(GJ01AB1234)"
+                android:inputType="textCapCharacters" />
 
-    <EditText
-        android:id="@+id/EtEmail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"
-        android:layout_marginTop="10dp"
-        android:hint="Email id" />
+            <EditText
+                android:id="@+id/EtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Email id"
+                android:inputType="textEmailAddress" />
 
-    <EditText
-        android:id="@+id/EtMobileNo"
-        android:layout_width="match_parent"
-        android:inputType="number"
-        android:layout_height="wrap_content"
-        android:maxLength="10"
-        android:minEms="10"
-        android:layout_marginTop="10dp"
-        android:hint="Mobile No" />
+            <EditText
+                android:id="@+id/EtMobileNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Mobile No"
+                android:inputType="number"
+                android:maxLength="10"
+                android:minEms="10" />
 
-    <EditText
-        android:id="@+id/EtPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:inputType="text"
-        android:hint="Password" />
+            <EditText
+                android:id="@+id/EtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Password"
+                android:inputType="text" />
 
-    <EditText
-        android:id="@+id/EtConPassword"
-        android:inputType="textPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:hint="Confirm Password" />
+            <EditText
+                android:id="@+id/EtConPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Confirm Password"
+                android:inputType="textPassword" />
 
-    <Button
-        android:id="@+id/btnRegister"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/buttonstyle"
-        android:text="Register"
-        android:textColor="#ffffff" />
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/buttonstyle"
+                android:text="Register"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+    </ScrollView>
 
 
 </LinearLayout>
