@@ -3,18 +3,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".RegisterActivity">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:gravity="center"
             android:orientation="vertical"
             android:padding="5dp">
@@ -34,7 +34,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:hint="User Name"
+                android:hint="Username"
                 android:inputType="textCapWords" />
 
             <EditText
@@ -61,7 +61,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:hint="Adhar No"
+                android:hint="Aadhar no"
                 android:inputType="number"
                 android:maxLength="12"
                 android:minEms="12" />
@@ -71,7 +71,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:hint="Vehical No  ex.(GJ01AB1234)"
+                android:hint="Vehical no  ex.(GJ01AB1234)"
                 android:inputType="textCapCharacters" />
 
             <EditText
@@ -87,7 +87,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:hint="Mobile No"
+                android:hint="Mobile no"
                 android:inputType="number"
                 android:maxLength="10"
                 android:minEms="10" />
@@ -119,6 +119,5 @@
 
         </LinearLayout>
     </ScrollView>
-
 
 </LinearLayout>
