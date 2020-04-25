@@ -70,8 +70,8 @@ public class UploadDocumentActivity extends AppCompatActivity implements View.On
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_upload_document);
-        SharedPreferences splogin = getSharedPreferences(Login.MyPREFERENCES, MODE_PRIVATE);
-        uid = splogin.getString(Login.Email, "");
+        SharedPreferences splogin = getSharedPreferences(LoginActivity.MyPREFERENCES, MODE_PRIVATE);
+        uid = splogin.getString(LoginActivity.Email, "");
 
 
         spinutype = (Spinner)findViewById(R.id.spinner1);

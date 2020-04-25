@@ -28,8 +28,8 @@ public class WalletActivity extends AppCompatActivity implements View.OnClickLis
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wallet);
 
-        SharedPreferences splogin = getSharedPreferences(Login.MyPREFERENCES, MODE_PRIVATE);
-        uid = splogin.getString(Login.User_ID, "");
+        SharedPreferences splogin = getSharedPreferences(LoginActivity.MyPREFERENCES, MODE_PRIVATE);
+        uid = splogin.getString(LoginActivity.User_ID, "");
 
         txt1 = (TextView)findViewById(R.id.textView1);
         txt3 = (TextView)findViewById(R.id.textView3);

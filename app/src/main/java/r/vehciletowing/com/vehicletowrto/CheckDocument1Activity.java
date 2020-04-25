@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -118,7 +117,7 @@ public class CheckDocument1Activity extends AppCompatActivity implements View.On
             // TODO Auto-generated method stub
 
             if (convertView == null) {
-                convertView = getLayoutInflater().inflate(R.layout.item_upload_card_inspector_layout, parent, false);
+                convertView = getLayoutInflater().inflate(R.layout.item_show_card_inspector, parent, false);
 
                 Holder = new ViewHolder();
                 Holder.title = (TextView) convertView.findViewById(R.id.textView2);

@@ -47,9 +47,9 @@ public class ApplyPenalty1Activity extends AppCompatActivity implements View.OnC
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_apply_penalty1);
 
-        SharedPreferences splogin = getSharedPreferences(Login.MyPREFERENCES, MODE_PRIVATE);
-        uid = splogin.getString(Login.Email, "");
-        rid = splogin.getString(Login.User_ID, "");
+        SharedPreferences splogin = getSharedPreferences(LoginActivity.MyPREFERENCES, MODE_PRIVATE);
+        uid = splogin.getString(LoginActivity.Email, "");
+        rid = splogin.getString(LoginActivity.User_ID, "");
 
         extra = getIntent().getExtras();
         sname = extra.getString("name").toString().trim();

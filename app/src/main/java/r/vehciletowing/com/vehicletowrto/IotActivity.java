@@ -2,11 +2,10 @@ package r.vehciletowing.com.vehicletowrto;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-public class MyIotAcitvity extends AppCompatActivity {
+public class IotActivity extends AppCompatActivity {
 
     private WebView myweb;
 
@@ -14,7 +13,7 @@ public class MyIotAcitvity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_my_iot_acitvity);
+        setContentView(R.layout.activity_iot);
 
         myweb = (WebView) findViewById(R.id.webview1);
         myweb.getSettings().setJavaScriptEnabled(true);

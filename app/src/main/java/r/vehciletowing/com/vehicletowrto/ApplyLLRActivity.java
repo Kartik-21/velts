@@ -62,8 +62,8 @@ public class ApplyLLRActivity extends AppCompatActivity implements View.OnClickL
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_apply_llr);
 
-        SharedPreferences splogin = getSharedPreferences(Login.MyPREFERENCES, MODE_PRIVATE);
-        uid = splogin.getString(Login.User_ID, "");
+        SharedPreferences splogin = getSharedPreferences(LoginActivity.MyPREFERENCES, MODE_PRIVATE);
+        uid = splogin.getString(LoginActivity.User_ID, "");
 
         spindistrict = (Spinner)findViewById(R.id.spinner1);
         spincity = (Spinner)findViewById(R.id.spinner2);

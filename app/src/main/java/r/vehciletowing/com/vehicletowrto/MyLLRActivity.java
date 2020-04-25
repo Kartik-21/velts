@@ -28,8 +28,8 @@ public class MyLLRActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_llr);
 
-        SharedPreferences splogin = getSharedPreferences(Login.MyPREFERENCES, MODE_PRIVATE);
-        uid = splogin.getString(Login.User_ID, "");
+        SharedPreferences splogin = getSharedPreferences(LoginActivity.MyPREFERENCES, MODE_PRIVATE);
+        uid = splogin.getString(LoginActivity.User_ID, "");
 
 
         list = (ListView)findViewById(R.id.listView1);

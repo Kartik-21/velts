@@ -14,7 +14,6 @@ import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -44,9 +43,9 @@ public class UserPenaltyActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_penalty);
 
-        SharedPreferences splogin = getSharedPreferences(Login.MyPREFERENCES, MODE_PRIVATE);
+        SharedPreferences splogin = getSharedPreferences(LoginActivity.MyPREFERENCES, MODE_PRIVATE);
 
-        uid = splogin.getString(Login.User_ID, "");
+        uid = splogin.getString(LoginActivity.User_ID, "");
 
 //        Spintype = (Spinner) findViewById(R.id.spinner1);
 

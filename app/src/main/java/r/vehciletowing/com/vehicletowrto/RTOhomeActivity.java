@@ -1,6 +1,5 @@
 package r.vehciletowing.com.vehicletowrto;
 
-import android.app.UiAutomation;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
@@ -54,12 +53,12 @@ public class RTOhomeActivity extends AppCompatActivity implements View.OnClickLi
 
         if(v==btnLogout)
         {
-            SharedPreferences sharedpreferences = getSharedPreferences(Login.MyPREFERENCES,MODE_PRIVATE);
+            SharedPreferences sharedpreferences = getSharedPreferences(LoginActivity.MyPREFERENCES,MODE_PRIVATE);
             SharedPreferences.Editor editor = sharedpreferences.edit();
             editor.clear();
             editor.commit();
 
-            Intent go = new Intent( RTOhomeActivity.this,Login.class);
+            Intent go = new Intent( RTOhomeActivity.this, LoginActivity.class);
             startActivity(go);
             finish();
         }

@@ -18,11 +18,11 @@
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".MainActivity" />
-        <activity android:name=".Register" />
-        <activity android:name=".Login" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity" />
         <activity android:name=".HomeActivity" />
         <activity android:name=".RTOhomeActivity" />
-        <activity android:name=".ForgotPass" />
+        <activity android:name=".ForgotPasswordActivity" />
         <activity android:name=".UploadDocumentActivity" />
         <activity android:name=".MyUploadsActivity" />
         <activity android:name=".ApplyLLRActivity" />
@@ -38,14 +38,14 @@
         <activity android:name=".UserPenalty2Activity" />
         <activity android:name=".CheckDocument1Activity" />
         <activity android:name=".ShowFineList1Activity" />
-        <activity android:name=".Splash">
+        <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MyIotAcitvity"></activity>
+        <activity android:name=".IotActivity"></activity>
     </application>
 
 </manifest>

@@ -38,8 +38,8 @@ public class MyUploadsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_uploads);
 
-        SharedPreferences splogin = getSharedPreferences(Login.MyPREFERENCES, MODE_PRIVATE);
-        uid = splogin.getString(Login.Email, "");
+        SharedPreferences splogin = getSharedPreferences(LoginActivity.MyPREFERENCES, MODE_PRIVATE);
+        uid = splogin.getString(LoginActivity.Email, "");
 
 
         list = (ListView) findViewById(R.id.listView1);
@@ -123,7 +123,7 @@ public class MyUploadsActivity extends AppCompatActivity {
             // TODO Auto-generated method stub
 
             if (convertView == null) {
-                convertView = getLayoutInflater().inflate(R.layout.item_upload_card_layout, parent, false);
+                convertView = getLayoutInflater().inflate(R.layout.item_show_card_user, parent, false);
 
                 Holder = new ViewHolder();
                 Holder.title = (TextView) convertView.findViewById(R.id.textView2);

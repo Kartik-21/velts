@@ -1,7 +1,6 @@
 package r.vehciletowing.com.vehicletowrto;
 
 import android.app.ProgressDialog;
-import android.app.SearchManager;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
@@ -14,7 +13,7 @@ import android.widget.Toast;
 
 import r.vehciletowing.com.vehicletowrto.API.APICall;
 
-public class ForgotPass extends AppCompatActivity implements View.OnClickListener {
+public class ForgotPasswordActivity extends AppCompatActivity implements View.OnClickListener {
 
     private EditText editEmail;
     private Button btnsend;
@@ -24,7 +23,7 @@ public class ForgotPass extends AppCompatActivity implements View.OnClickListene
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_forgot_pass);
+        setContentView(R.layout.activity_forgot_password);
 
         editEmail = (EditText) findViewById(R.id.editText1);
 
@@ -50,7 +49,7 @@ public class ForgotPass extends AppCompatActivity implements View.OnClickListene
         }
 
         if (v == txtlogin) {
-            Intent i = new Intent(ForgotPass.this, Login.class);
+            Intent i = new Intent(ForgotPasswordActivity.this, LoginActivity.class);
             startActivity(i);
             finish();
         }
@@ -64,7 +63,7 @@ public class ForgotPass extends AppCompatActivity implements View.OnClickListene
         @Override
         protected void onPreExecute() {
             //
-            dialog = new ProgressDialog(ForgotPass.this);
+            dialog = new ProgressDialog(ForgotPasswordActivity.this);
             dialog.setMessage("Please Wait..!");
             dialog.show();
             super.onPreExecute();
@@ -90,15 +89,15 @@ public class ForgotPass extends AppCompatActivity implements View.OnClickListene
                 if (result.contains("Sent"))
                 //if(result.contains("$pass"))
                 {
-                    Toast.makeText(ForgotPass.this, "Email sent Successfully..!", Toast.LENGTH_SHORT).show();
-                    Intent i = new Intent(ForgotPass.this, Login.class);
+                    Toast.makeText(ForgotPasswordActivity.this, "Email sent Successfully..!", Toast.LENGTH_SHORT).show();
+                    Intent i = new Intent(ForgotPasswordActivity.this, LoginActivity.class);
                     startActivity(i);
                     finish();
                 } else {
-                    Toast.makeText(ForgotPass.this, "Please try again..!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ForgotPasswordActivity.this, "Please try again..!", Toast.LENGTH_SHORT).show();
                 }
             } else {
-                Toast.makeText(ForgotPass.this, "Check your Internet Connection", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ForgotPasswordActivity.this, "Check your Internet Connection", Toast.LENGTH_SHORT).show();
             }
             dialog.dismiss();
             super.onPostExecute(result);
@@ -109,7 +108,7 @@ public class ForgotPass extends AppCompatActivity implements View.OnClickListene
     @Override
     public void onBackPressed() {
 
-        startActivity(new Intent(ForgotPass.this, Login.class));
+        startActivity(new Intent(ForgotPasswordActivity.this, LoginActivity.class));
         finish();
         super.onBackPressed();
     }

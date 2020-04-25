@@ -10,7 +10,6 @@ import android.os.Build;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -23,7 +22,7 @@ import r.vehciletowing.com.vehicletowrto.API.APICall;
 import r.vehciletowing.com.vehicletowrto.POJO.AllUser;
 import r.vehciletowing.com.vehicletowrto.POJO.User;
 
-public class Login extends AppCompatActivity implements View.OnClickListener {
+public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
 
     private EditText editEmail;
     private EditText editPassword;
@@ -74,11 +73,11 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
 
         if (slogin.contains("Yes")) {
             if (stype.contains("User")) {
-                Intent go = new Intent(Login.this, HomeActivity.class);
+                Intent go = new Intent(LoginActivity.this, HomeActivity.class);
                 startActivity(go);
                 finish();
             } else if (stype.contains("Employee")) {
-                Intent go = new Intent(Login.this, RTOhomeActivity.class);
+                Intent go = new Intent(LoginActivity.this, RTOhomeActivity.class);
                 startActivity(go);
                 finish();
             }
@@ -123,13 +122,13 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         Validation valid =new Validation();
 
         if (v == txtSignUp) {
-            Intent i = new Intent(Login.this, Register.class);
+            Intent i = new Intent(LoginActivity.this, RegisterActivity.class);
             startActivity(i);
             finish();
         }
 
         if (v == txtforgot) {
-            Intent i = new Intent(Login.this, ForgotPass.class);
+            Intent i = new Intent(LoginActivity.this, ForgotPasswordActivity.class);
             startActivity(i);
             finish();
         }
@@ -165,7 +164,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         @Override
         protected void onPreExecute() {
             // TODO Auto-generated method stub
-            dialog = new ProgressDialog(Login.this);
+            dialog = new ProgressDialog(LoginActivity.this);
             dialog.setMessage("Please Wait..!");
             dialog.show();
             super.onPreExecute();
@@ -186,7 +185,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
 
             if (result != "") {
                 if (result.contains("Error")) {
-                    Toast.makeText(Login.this, "Invalid Email/Password", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity.this, "Invalid Email/Password", Toast.LENGTH_SHORT).show();
                 } else {
                     sharedpreferences = getSharedPreferences(MyPREFERENCES, MODE_PRIVATE);
                     SharedPreferences.Editor editor = sharedpreferences.edit();
@@ -198,18 +197,18 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
                     new GetUserDetail().execute();
                     if (result.contains("User")) {
                         srole = "User";
-                        Intent i = new Intent(Login.this, HomeActivity.class);
+                        Intent i = new Intent(LoginActivity.this, HomeActivity.class);
                         startActivity(i);
                         finish();
                     } else if (result.contains("Employee")) {
                         srole = "Employee";
-                        Intent i = new Intent(Login.this, RTOhomeActivity.class);
+                        Intent i = new Intent(LoginActivity.this, RTOhomeActivity.class);
                         startActivity(i);
                         finish();
                     }
                 }
             } else {
-                Toast.makeText(Login.this, "Check your Internet Connection", Toast.LENGTH_SHORT).show();
+                Toast.makeText(LoginActivity.this, "Check your Internet Connection", Toast.LENGTH_SHORT).show();
             }
             dialog.dismiss();
             super.onPostExecute(result);

@@ -19,7 +19,7 @@ import r.vehciletowing.com.vehicletowrto.API.APICall;
 import r.vehciletowing.com.vehicletowrto.POJO.AllUser;
 import r.vehciletowing.com.vehicletowrto.POJO.User;
 
-public class Register extends AppCompatActivity implements View.OnClickListener {
+public class RegisterActivity extends AppCompatActivity implements View.OnClickListener {
 
     private ArrayList<User> AllDistrict;
     private ArrayList<String> districts;
@@ -70,8 +70,8 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
         districts.add("Select District");
         cities.add("Select City");
 
-        DistrictAdapter = new ArrayAdapter<String>(Register.this, android.R.layout.simple_spinner_dropdown_item, districts);
-        CityAdapter = new ArrayAdapter<String>(Register.this, android.R.layout.simple_spinner_dropdown_item, cities);
+        DistrictAdapter = new ArrayAdapter<String>(RegisterActivity.this, android.R.layout.simple_spinner_dropdown_item, districts);
+        CityAdapter = new ArrayAdapter<String>(RegisterActivity.this, android.R.layout.simple_spinner_dropdown_item, cities);
 
         spindistrict.setAdapter(DistrictAdapter);
         spincity.setAdapter(CityAdapter);
@@ -143,7 +143,7 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
 
 
             else if (selecteddistrict == 0) {
-                Toast.makeText(Register.this, "Select District", Toast.LENGTH_SHORT).show();
+                Toast.makeText(RegisterActivity.this, "Select District", Toast.LENGTH_SHORT).show();
                 return;
             }
            /* else if(selectedcid==0)
@@ -208,7 +208,7 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
                     // Toast.makeText(this, "i m here 2", Toast.LENGTH_SHORT).show();
                 } else {
                     editcpassword.setText("");
-                    Toast.makeText(Register.this, "Enter same password", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(RegisterActivity.this, "Enter same password", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
@@ -223,7 +223,7 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
 
         @Override
         protected void onPreExecute() {
-            dialog = new ProgressDialog(Register.this);
+            dialog = new ProgressDialog(RegisterActivity.this);
             dialog.setMessage("Please Wait..!");
             dialog.show();
             super.onPreExecute();
@@ -263,16 +263,16 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
           super.onPostExecute(result);*/
             if (result != "") {
                 dialog.dismiss();
-                Toast.makeText(Register.this, result, Toast.LENGTH_SHORT).show();
+                Toast.makeText(RegisterActivity.this, result, Toast.LENGTH_SHORT).show();
                 if (result.contains("Registration Successful..!")) {
-                    Intent i = new Intent(Register.this, Login.class);
+                    Intent i = new Intent(RegisterActivity.this, LoginActivity.class);
                     startActivity(i);
                     finish();
                 } else {
                     return;
                 }
             } else {
-                Toast.makeText(Register.this, "Check your Internet Connection", Toast.LENGTH_SHORT).show();
+                Toast.makeText(RegisterActivity.this, "Check your Internet Connection", Toast.LENGTH_SHORT).show();
             }
             super.onPostExecute(result);
 
@@ -287,7 +287,7 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
         protected void onPreExecute() {
             // TODO Auto-generated method stub
 
-            dialog = new ProgressDialog(Register.this);
+            dialog = new ProgressDialog(RegisterActivity.this);
             dialog.setMessage("Please wait");
             dialog.show();
             super.onPreExecute();
@@ -329,7 +329,7 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
         protected void onPreExecute() {
             // TODO Auto-generated method stub
 
-            dialog = new ProgressDialog(Register.this);
+            dialog = new ProgressDialog(RegisterActivity.this);
             dialog.setMessage("Please wait");
             dialog.show();
             super.onPreExecute();
@@ -366,7 +366,7 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
 
     @Override
     public void onBackPressed() {
-        startActivity(new Intent(Register.this, Login.class));
+        startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
         finish();
         super.onBackPressed();
     }

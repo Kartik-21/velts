@@ -82,17 +82,17 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         }
         if(v==btntrack)
         {
-            Intent i = new Intent(HomeActivity.this,MyIotAcitvity.class);
+            Intent i = new Intent(HomeActivity.this, IotActivity.class);
             startActivity(i);
         }
         if(v==btnLogout)
         {
-            SharedPreferences sharedpreferences = getSharedPreferences(Login.MyPREFERENCES,MODE_PRIVATE);
+            SharedPreferences sharedpreferences = getSharedPreferences(LoginActivity.MyPREFERENCES,MODE_PRIVATE);
             SharedPreferences.Editor editor = sharedpreferences.edit();
             editor.clear();
             editor.commit();
 
-            Intent go = new Intent( HomeActivity.this,Login.class);
+            Intent go = new Intent( HomeActivity.this, LoginActivity.class);
             startActivity(go);
             finish();
         }
@@ -102,7 +102,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onBackPressed() {
 
-        startActivity(new Intent(HomeActivity.this, Login.class));
+        startActivity(new Intent(HomeActivity.this, LoginActivity.class));
         finish();
         super.onBackPressed();
     }
