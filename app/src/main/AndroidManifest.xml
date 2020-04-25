@@ -20,8 +20,8 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".LoginActivity" />
-        <activity android:name=".HomeActivity" />
-        <activity android:name=".RTOhomeActivity" />
+        <activity android:name=".HomeUserActivity" />
+        <activity android:name=".HomeInspectorActivity" />
         <activity android:name=".ForgotPasswordActivity" />
         <activity android:name=".UploadDocumentActivity" />
         <activity android:name=".MyUploadsActivity" />

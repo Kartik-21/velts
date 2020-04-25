@@ -316,7 +316,7 @@ public class PaymentActivity extends AppCompatActivity implements View.OnClickLi
                 Toast.makeText(PaymentActivity.this, result, Toast.LENGTH_LONG).show();
 
                 if (result.contains("Added..!")) {
-                    startActivity(new Intent(PaymentActivity.this, HomeActivity.class));
+                    startActivity(new Intent(PaymentActivity.this, HomeUserActivity.class));
                     finish();
                 }
 

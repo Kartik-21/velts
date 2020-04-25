@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
-public class RTOhomeActivity extends AppCompatActivity implements View.OnClickListener {
+public class HomeInspectorActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button btnCheck;
     private Button btnPenalty;
@@ -18,7 +18,7 @@ public class RTOhomeActivity extends AppCompatActivity implements View.OnClickLi
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_rtohome);
+        setContentView(R.layout.activity_home_inspector);
 
         btnCheck = (Button)findViewById(R.id.button1);
         btnPenalty = (Button)findViewById(R.id.button2);
@@ -35,19 +35,19 @@ public class RTOhomeActivity extends AppCompatActivity implements View.OnClickLi
     public void onClick(View v) {
         if(v==btnCheck)
         {
-            Intent i = new Intent(RTOhomeActivity.this,CheckDocumentActivity.class);
+            Intent i = new Intent(HomeInspectorActivity.this,CheckDocumentActivity.class);
             startActivity(i);
         }
 
         if(v==btnPenalty)
         {
-            Intent i = new Intent(RTOhomeActivity.this,ApplyPenaltyActivity.class);
+            Intent i = new Intent(HomeInspectorActivity.this,ApplyPenaltyActivity.class);
             startActivity(i);
         }
 
         if(v==btnfinelist)
         {
-            Intent i = new Intent(RTOhomeActivity.this,ShowFineListActivity.class);
+            Intent i = new Intent(HomeInspectorActivity.this,ShowFineListActivity.class);
             startActivity(i);
         }
 
@@ -58,7 +58,7 @@ public class RTOhomeActivity extends AppCompatActivity implements View.OnClickLi
             editor.clear();
             editor.commit();
 
-            Intent go = new Intent( RTOhomeActivity.this, LoginActivity.class);
+            Intent go = new Intent( HomeInspectorActivity.this, LoginActivity.class);
             startActivity(go);
             finish();
         }

@@ -117,7 +117,7 @@ public class CheckDocument1Activity extends AppCompatActivity implements View.On
             // TODO Auto-generated method stub
 
             if (convertView == null) {
-                convertView = getLayoutInflater().inflate(R.layout.item_show_card_inspector, parent, false);
+                convertView = getLayoutInflater().inflate(R.layout.item_show_card_inspector_layout, parent, false);
 
                 Holder = new ViewHolder();
                 Holder.title = (TextView) convertView.findViewById(R.id.textView2);

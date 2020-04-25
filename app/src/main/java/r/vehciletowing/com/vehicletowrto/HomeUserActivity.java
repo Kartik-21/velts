@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
-public class HomeActivity extends AppCompatActivity implements View.OnClickListener {
+public class HomeUserActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button btnUpload;
     private Button btnmyUpload;
@@ -22,7 +22,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_home_user);
 
         btnUpload = (Button)findViewById(R.id.button1);
         btnmyUpload = (Button)findViewById(R.id.button2);
@@ -48,41 +48,41 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
 
         if(v==btnUpload)
         {
-            Intent i = new Intent(HomeActivity.this,UploadDocumentActivity.class);
+            Intent i = new Intent(HomeUserActivity.this,UploadDocumentActivity.class);
             startActivity(i);
         }
 
         if(v==btnmyUpload)
         {
-            Intent i = new Intent(HomeActivity.this,MyUploadsActivity.class);
+            Intent i = new Intent(HomeUserActivity.this,MyUploadsActivity.class);
             startActivity(i);
         }
         if(v==btnapplyllr)
         {
-            Intent i = new Intent(HomeActivity.this,ApplyLLRActivity.class);
+            Intent i = new Intent(HomeUserActivity.this,ApplyLLRActivity.class);
             startActivity(i);
         }
 
         if(v==btnmyllr)
         {
-            Intent i = new Intent(HomeActivity.this,MyLLRActivity.class);
+            Intent i = new Intent(HomeUserActivity.this,MyLLRActivity.class);
             startActivity(i);
         }
 
         if(v==btnpenalty)
         {
-            Intent i = new Intent(HomeActivity.this,UserPenaltyActivity.class);
+            Intent i = new Intent(HomeUserActivity.this,UserPenaltyActivity.class);
             startActivity(i);
         }
 
         if(v==btnWallet)
         {
-            Intent i = new Intent(HomeActivity.this,WalletActivity.class);
+            Intent i = new Intent(HomeUserActivity.this,WalletActivity.class);
             startActivity(i);
         }
         if(v==btntrack)
         {
-            Intent i = new Intent(HomeActivity.this, IotActivity.class);
+            Intent i = new Intent(HomeUserActivity.this, IotActivity.class);
             startActivity(i);
         }
         if(v==btnLogout)
@@ -92,7 +92,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
             editor.clear();
             editor.commit();
 
-            Intent go = new Intent( HomeActivity.this, LoginActivity.class);
+            Intent go = new Intent( HomeUserActivity.this, LoginActivity.class);
             startActivity(go);
             finish();
         }
@@ -102,7 +102,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onBackPressed() {
 
-        startActivity(new Intent(HomeActivity.this, LoginActivity.class));
+        startActivity(new Intent(HomeUserActivity.this, LoginActivity.class));
         finish();
         super.onBackPressed();
     }

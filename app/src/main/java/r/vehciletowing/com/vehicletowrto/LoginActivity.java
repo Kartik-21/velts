@@ -73,11 +73,11 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
         if (slogin.contains("Yes")) {
             if (stype.contains("User")) {
-                Intent go = new Intent(LoginActivity.this, HomeActivity.class);
+                Intent go = new Intent(LoginActivity.this, HomeUserActivity.class);
                 startActivity(go);
                 finish();
             } else if (stype.contains("Employee")) {
-                Intent go = new Intent(LoginActivity.this, RTOhomeActivity.class);
+                Intent go = new Intent(LoginActivity.this, HomeInspectorActivity.class);
                 startActivity(go);
                 finish();
             }
@@ -197,12 +197,12 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                     new GetUserDetail().execute();
                     if (result.contains("User")) {
                         srole = "User";
-                        Intent i = new Intent(LoginActivity.this, HomeActivity.class);
+                        Intent i = new Intent(LoginActivity.this, HomeUserActivity.class);
                         startActivity(i);
                         finish();
                     } else if (result.contains("Employee")) {
                         srole = "Employee";
-                        Intent i = new Intent(LoginActivity.this, RTOhomeActivity.class);
+                        Intent i = new Intent(LoginActivity.this, HomeInspectorActivity.class);
                         startActivity(i);
                         finish();
                     }
